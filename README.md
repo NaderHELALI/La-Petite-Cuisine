@@ -10,7 +10,7 @@ RAPPORT BDD La Petite Cuisine
 •	Ainsi la société aura besoin de se procurer les produits auprès de ses fournisseurs pour que les recettes restent disponibles pour les clients. Ainsi les réapprovisionnements et la quantité de ceux-là sont stocké dans la table Vend.
 ## Le fonctionnement des commandes
 •	Après que le client est passé la commande, celle-ci est inscrit dans la table commande. Chaque commande est composée d’une ou plusieurs recettes. Or chaque recette n’est pas associée à une seule commande. Par conséquent la table Est_composee prend sens et permet d’enregistrer la dépendance entre une commande et une recette. De plus, elle stocke la quantité de recette commandé dans une commande
-##	La table cooking est ici définit comme celui qui a accès au menu administrateur qui permettra de gérer les commandes et leur livraison. Trop peu d’éléments inscrit dans le cahier des charges concernant se procéder. Ainsi les cuisiniers n’ont pas été intégrer dans la modélisation  
+La table cooking est ici définit comme celui qui a accès au menu administrateur qui permettra de gérer les commandes et leur livraison. Trop peu d’éléments inscrit dans le cahier des charges concernant se procéder. Ainsi les cuisiniers n’ont pas été intégrer dans la modélisation  
  # II – Option de codage :
 On a choisi de développer en WPF afin de créer une interface sobre et facile d’utilisation qui permettra d’attirer tous types de clientèles. 
 ##	Ce WPF a été réalisé avec une implémentation Open Source du module se nommant ‘ModernWpf’ que l’on a pu acquérir sur GitHub.
@@ -40,10 +40,7 @@ On a choisi de développer en WPF afin de créer une interface sobre et facile d
 •	Fonction permettant de réaliser : 
 
 
-
-
-
-##Menu Administrateur : 
+ ## Menu Administrateur : 
 •	Plusieurs fonctions Explicites :				
 
 
@@ -54,4 +51,4 @@ On a choisi de développer en WPF afin de créer une interface sobre et facile d
 
 ##	Remarques : 
 •	Concernant l’Xml, on a décidé de le généré en brut plutôt qu’utiliser les pour confirmer nos connaissances dans ce nouveau langage.
-•	On a décidé de limiter le nombre de classe, car on a trouvé plus juste d’utiliser un maximum la base de données pour stocker les informations. Ainsi on a pu nous familiariser pleinement avec les requêtes SQL dans C#
+•	On a décidé de limiter le nombre de classe, car on a trouvé plus juste d’utiliser un maximum la base de données pour stocker les informations. Ainsi on a pu nous 		familiariser pleinement avec les requêtes SQL dans C#

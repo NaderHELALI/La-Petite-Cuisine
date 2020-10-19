@@ -1,0 +1,44 @@
+﻿<Window x:Class="Cooking_BDD.Order_Client"
+       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        xmlns:ui="http://schemas.modernwpf.com/2019"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Cooking_BDD"
+      Title="Commande_Client" Width="865.778" Height="487">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ui:ColorPaletteResources Accent="#FF0078D7" />
+                <ResourceDictionary Source="pack://application:,,,/ModernWpf;component/ThemeResources/Dark.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/ModernWpf;component/ControlsResources.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <Rectangle Fill="#FF303030" HorizontalAlignment="Left" Height="456" Stroke="Black" VerticalAlignment="Top" Width="858"/>
+
+        <Image Margin="10,15,728,335" Source="RECETTE.jpg" Stretch="Fill">
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+
+        </Image>
+        <TextBlock HorizontalAlignment="Left" Margin="310,15,0,0" TextWrapping="Wrap" Text="LISTES DES RECETTES" VerticalAlignment="Top" Height="75" Width="355" FontFamily="Adobe Fan Heiti Std B" FontSize="36" TextDecorations="Underline" Foreground="White"/>
+        <ListBox x:Name="panier" HorizontalAlignment="Left" Height="280" Margin="455,120,0,0" VerticalAlignment="Top" Width="210" Background="#FF767676" />
+        <Button Content="Ajouter" HorizontalAlignment="Left" Margin="335,267,0,0" VerticalAlignment="Top" Width="104" Height="33" Click="Add_toCard" RenderTransformOrigin="0.521,-1.2" />
+        <Button Content="Supprimer" HorizontalAlignment="Left" Margin="525,416,0,0" VerticalAlignment="Top" Width="85" Height="30" Click="Delete_fromCard"/>
+        <Button Content="Description" HorizontalAlignment="Left" Margin="192,416,0,0" VerticalAlignment="Top" Width="113" Click="Description" Height="30"/>
+        <TextBlock HorizontalAlignment="Left" Margin="156,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontFamily="Adobe Fan Heiti Std B"><Run Text="Toutes Les "/><Run Text="R"/><Run Text="ecettes"/><Run Text=" : "/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="465,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontFamily="Adobe Fan Heiti Std B" Text="Mon Panier : "/>
+        <ListBox x:Name="recettes" HorizontalAlignment="Left" Height="280" Margin="156,120,0,0" VerticalAlignment="Top" Width="164" Background="#FF767676"/>
+        <Label Content="Prix Total :" HorizontalAlignment="Left" Foreground="White" Margin="675,99,0,0" VerticalAlignment="Top" FontFamily="Adobe Fan Heiti Std B"/>
+        <TextBlock x:Name="total_price" HorizontalAlignment="Left" Foreground="White" Margin="760,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="21" Width="30" Text="0" FrameworkElement.FlowDirection="RightToLeft" FontSize="16"/>
+        <Image x:Name="money" Margin="808,90,10,315" Source="dollar-icon.png" Stretch="Fill" Opacity="0.8"/>
+        <Button Content="Payer" HorizontalAlignment="Left" Margin="773,153,0,0" VerticalAlignment="Top" Width="75" Click="Payer"></Button>
+        <TextBox x:Name="Quantite" HorizontalAlignment="Left" Height="23" Margin="335,233,0,0" TextWrapping="Wrap" Text="..." VerticalAlignment="Top" Width="50"  />
+        <TextBlock HorizontalAlignment="Left" Margin="335,209,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-0.102,-0.625" Foreground="White" FontFamily="Adobe Fan Heiti Std B"><Run Text="Quantit"/><Run Text="e"/><Run Text=" : "/></TextBlock>
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,92 @@
+<Reaprovisionnement>
+
+
+  <Fournisseur>
+
+   <Nom>Carrefour</Nom>
+
+   <Produit>
+    <nom>Couscous </nom>
+    <quantite>28</quanite>
+   </Produit>
+
+  </Fournisseur>
+
+
+  <Fournisseur>
+
+   <Nom></Nom>
+
+  </Fournisseur>
+
+
+  <Fournisseur>
+
+   <Nom>Boucherie</Nom>
+
+  </Fournisseur>
+
+
+  <Fournisseur>
+
+   <Nom>Auchan</Nom>
+
+   <Produit>
+    <nom>aaaaa</nom>
+    <quantite>5</quanite>
+   </Produit>
+
+   <Produit>
+    <nom>Comcombre</nom>
+    <quantite>28</quanite>
+   </Produit>
+
+   <Produit>
+    <nom>Courgette</nom>
+    <quantite>489</quanite>
+   </Produit>
+
+   <Produit>
+    <nom>Merguez</nom>
+    <quantite>28</quanite>
+   </Produit>
+
+   <Produit>
+    <nom>Oignon</nom>
+    <quantite>28</quanite>
+   </Produit>
+
+   <Produit>
+    <nom>Persil</nom>
+    <quantite>28</quanite>
+   </Produit>
+
+   <Produit>
+    <nom>Petit Poids</nom>
+    <quantite>298</quanite>
+   </Produit>
+
+   <Produit>
+    <nom>Salade_Vert</nom>
+    <quantite>28</quanite>
+   </Produit>
+
+   <Produit>
+    <nom>Sauce Tomate</nom>
+    <quantite>298</quanite>
+   </Produit>
+
+   <Produit>
+    <nom>Spaghetti</nom>
+    <quantite>28</quanite>
+   </Produit>
+
+   <Produit>
+    <nom>Tomates</nom>
+    <quantite>28</quanite>
+   </Produit>
+
+  </Fournisseur>
+
+
+</Reaprovisionnement>
